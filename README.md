@@ -1,4 +1,4 @@
-bootstrap-template-documentation
+landing-page-template-documentation
 ================================
 
-Bootstrap template documentation
+Landing Page template documentation
