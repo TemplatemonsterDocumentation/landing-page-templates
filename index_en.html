@@ -135,10 +135,8 @@
                          <dd>
                          	<ul class="list">          
                               <li><a href="#contact-form-manual">Contact form</a></li>
-                              <li><a href="#search-engine">Search Engine</a></li>
                               <li><a href="#under-construction">Under Construction</a></li>
                               <li><a href="#subscription-form">Subscription Form</a></li>
-                              <li><a href="#multimedia-gallery">TM Gallery</a></li>
                               <li><a href="#video-bg">Video background</a></li>
                               <li><a href="#parallax-bg">Parallax background</a></li>
                              </ul> 
@@ -491,62 +489,7 @@ $error_text='something goes wrong';</pre>
 					</ul>
 			</div>
         </article>
-        <!---->
-         <h4 id="search-engine" class="scrollTo">Search engine manual</h4>
-         <article class="search-engine">		<p>Attention! Search feature will not work locally. It works only on a hosting-server with PHP enabled.</p>
-         <div class="bs-docs-example">
-					
-					<span class="word">Enter a word to search for:</span>
-					<form id="search" action="search.php" method="GET" accept-charset="utf-8">
-					   <input type="text" name="s" />
-					   <a onclick="document.getElementById('search').submit()">Search</a>
-					</form>	          		
-					<span class="example">For instance: lorem, ipsum, dolor</span>
-          </div>
-          <pre class="prettyprint linenums">&lt;form id="search" action="search.php" method="GET" accept-charset="utf-8"&gt;
-   &lt;input type="text" name="s" /&gt;
-   &lt;a onclick="document.getElementById('search').submit()"&gt;Search&lt;/a&gt;
-&lt;/form&gt;</pre>
-					<h4>Description</h4>
-					<div class="inner">
-						<p><strong>Files needed to work with the form:</strong></p>
-						<div class="inner">
-							<ul class="square-list">
-								<li><strong>jquery.js</strong> &ndash; jQuery library (the form will work with this version of library only);</li>
-								<li><strong>search.css</strong> &ndash; stylesheet file, which is being used for the search results pages stylization;</li>
-								<li><strong>search.php</strong> &ndash; page, where the search results will appear;</li>
-								<li><strong>search.js</strong> &ndash; script, which is responsible for the search results output in an iframe on the page <strong>search.php;</strong></li>
-								<li><strong>results.php</strong> &ndash; PHP script, which actually performs the search.</li>
-							</ul>
-						</div>
-						
-						<p class="pad">In this form we should define such parameters as: <strong>action="search.php"</strong> and <strong>method="get"</strong>, also set parameter for an input: <strong>name="s"</strong>. If you want to change the name of the search form, which is <strong>id="search"</strong> by default, you should change it on the line 3 in the file <strong>search.js</strong> as well, you can find it in <strong>search</strong> folder.</p>						
-					</div>
-					<h4>Settings</h4>
-					<div class="inner">
-						<p class="attention">Note, search form is enabled, configured and works by default. These steps are required if you are trying to use this search form in another project/template without working search form.</p>
-						<p>To make the form work correctly, please, perform the following steps:</p>
-						<ul class="square-list">
-							<li>copy <strong>search</strong> folder to the root directory with your *.html files;</li>
-							<li>move file <strong>search.php</strong> from the <strong>search</strong> folder to the root directory (with *.html files);</li>
-							<li>edit your form, using the directions above;</li>
-							<li>copy partly header and footer with all the connected scripts in the section <strong>&lt;head&gt;&lt;/head&gt;</strong> to the page <strong>search.php</strong>, but necessarily add connection of the file <strong>search.js</strong>. For example:
-							<pre  class="prettyprint linenums">&lt;link rel="stylesheet" href="css/reset.css" type="text/css" media="all"&gt;
-&lt;link rel="stylesheet" href="css/fonts.css" type="text/css" media="all"&gt;
-&lt;link rel="stylesheet" href="css/style.css" type="text/css" media="all"&gt;
-&lt;script src="js/jquery.js"&gt;&lt;/script&gt;
-&lt;script src="search/search.js"&gt;&lt;/script&gt;</pre></li>
-							<li>for the search results output add the following block to your content:
-								<pre class="prettyprint linenums">&lt;h4&gt;Search result:&lt;/h4&gt;
-&lt;div id="search-results"&gt;&lt;/div&gt;</pre>								
-							</li>
-							<li>change style of the search results, using <strong>search.css</strong>.</li>
-						</ul>			
-						<p>All the rest main styles of your template will be automatically pulled from the file <strong>style.css</strong> by the PHP script.</p>
-					</div>
-				</article> 
-         
-         
+        
          <!---->
          <h4 id="under-construction" class="scrollTo">Countdown Script Manual (Under Construction page)</h4>
          	<article>	
@@ -757,164 +700,6 @@ $(window).load(function(){
             <li><strong>sitename</strong> &ndash; website address which maintains subscription form.</li>
           </ul>
         <p>In case of successful subscription website owner and website visitor get two separate successful subscription confirmation emails. Website owner target email is grabbed from sForm.js file and website visitor email is an email specified during subscription.</p>
-      </div>
-    </article>
-
-    <h4 id="multimedia-gallery" class="scrollTo" style="padding: 50px 0 0px 0;">TM gallery</h4>
-    <article>  
-
-    <!-- Getting started end -->
-    <h4>Description</h4>
-    <div class="inner"> 
-      <strong>tmMultimediaGallery</strong> is a responsive gallery, that uses 3D and CSS3 animation methods. Image transition effects are defined by CSS features.<br>
-      We need to note, that the browsers not supporting CSS3 animation will get the simple fade effect for image changing.<br>
-      <p class="top-indent">The gallery can be realized in two ways:</p>
-        <div>
-            <ol class="square-list">
-            <li>Automatic composing of an image list with a path to the images folder.</li>
-            <li>Manual insert of the list into HTML code with corresponding paths to the images.</li>
-          </ol>
-            
-          </div>
-      </div>
-    <p  class="top-indent">Let's analyze both ways and find out their divergences.</p>
-    
-    <h4>Way 1.</h4>
-    <div class="inner">
-        <p>Implementing and configuring the gallery compiles a few steps:</p>
-        <ol>
-          <li>Create a new copy of any website page and rename it any you like.</li>
-          <li>Leave the header and footer in the new page, delete all content part.</li>
-          <li>Copy <a href="/help/quick-start-guide/website-templates/responsive-website-templates-v1-1/gallery.rar">gallery</a> folder that contains gallery files into your website root.</li>
-          <li>Add the following scripts and styles in the head section:
-              <pre class="prettyprint linenums">
-&lt;!-- start gallery scripts --&gt;
-&lt;link rel="stylesheet" href="gallery/css/tmMultimediaGallery.css"&gt;
-&lt;script src="gallery/js/isotope.pkgd.min.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmFileList.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmPaginationGenerator.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmMultimediaGallery.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmMultimediaGallery_init.js"&gt;&lt;/script&gt;
-&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;     
-&lt;script src="gallery/js/jquery.touchSwipe.min.js"&gt;&lt;/script&gt;
-&lt;!--&lt;![endif]--&gt;
-
-&lt;!-- end gallery scripts --&gt;         </pre>
-          </li>
-          <li>You should insert code before closing <strong>&lt;/body&gt;</strong>  tag and  define the correct paths to image folders. <strong>pathThumb</strong> is a path to thumbnails folder, <strong>pathFull</strong> is a path to the large gallery images folder, that correspond thumbnails:
-            <pre class="prettyprint linenums">
-&lt;script&gt;
-    $(function() {
-        pathThumb = 'img/gallery/category1/';
-        pathFull = 'img/gallery/category1/full/';
-    })
-&lt;/script&gt;         </pre>
-          </li>
-          <li>Insert the following code before the content: 
-            <pre class="prettyprint linenums">
-&lt;div class="galleryContainer"&gt;
-    &lt;!-- spinner --&gt;
-    &lt;div class="imgSpinner"&gt;&lt;/div&gt;
-    &lt;!-- close button --&gt;
-    &lt;a href="" class="close-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
-
-    &lt;!-- Navigation --&gt;
-    &lt;div class="gallery_nav"&gt;
-        &lt;!-- previous button --&gt;
-        &lt;a href="#" class="prevButton"&gt;
-            &lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;
-       &lt;/a&gt;
-        &lt;!-- next button --&gt;
-        &lt;a href="#" class="nextButton"&gt;
-            &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-
-    &lt;!-- main gallery and image holder --&gt;
-    &lt;div class="galleryHolder"&gt;
-        &lt;div class="imageHolder"&gt;
-            &lt;img src="images/gallery/category1/full/img-1.jpg" alt=""&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;           </pre>
-
-          </li>
-          <li>It is necessary to define the correct path to any large image in the inserted code.</li>
-          <li>You need to create &lt;div&gt; element with the <strong>"inner"</strong> CSS class inside the content part of your HTML page:
-  <pre class="prettyprint linenums">
-&lt;div class="inner"&gt;&lt;/div&gt;         </pre>
-          </li>
-          <li>Link the required elements from your website to the newly created page and enjoy your gallery.</li>
-
-        </ol>
-
-        <p class="error-box">Important! Created HTML files should be located in the root directory of your website, on the same level with the "gallery" folder.</p>
-
-        <p class="notification-box">Attention! If the names and the number of the thumbnails do not correspond to the names and number of the large images, the gallery will work incorrectly.</p>
-        
-        
-        <p>The essence of this way is that you do not need to write manually the path to each image. You need just to define paths to the thumbnails and large images folder. The script will find images in the defined folders and generate the list itself. That is why you had to maintain corresponding names and numbers of images in both folders.</p>
-
-        <p>View  <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-without-description.html" target="blank_">demo</a></p>       
-      </div>
-
-      <h4>Way 2.</h4>
-      <div class="inner">
-        <p>The second way differs from the first one by the ability to attach the description to each photo if necessary. You need to complete steps 1-5 from the first way of the gallery implementation.</p>
-        You have to:
-         <ol class="top-indent">
-           <li>Insert the following code before the content:
-            <pre class="prettyprint linenums">
-&lt;div class="galleryContainer"&gt;
-    &lt;!-- spinner --&gt;
-    &lt;div class="imgSpinner"&gt;&lt;/div&gt;
-    &lt;!-- close button --&gt;
-    &lt;a href="" class="close-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;!-- Navigation --&gt;
-    &lt;div class="gallery_nav"&gt;
-        &lt;!-- previous button --&gt;
-        &lt;a href="#" class="prevButton"&gt;
-            &lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;
-       &lt;/a&gt;
-        &lt;!-- next button --&gt;
-        &lt;a href="#" class="nextButton"&gt;
-            &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;!-- main gallery and image holder --&gt;
-    &lt;div class="galleryHolder"&gt;
-        &lt;div class="imageHolder"&gt;
-            &lt;img src="images/gallery/category1/full/img-1.jpg" alt=""&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;!-- description --&gt;
-    &lt;a href="#" class="info-icon"&gt;&lt;i class="fa fa-info"&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;div class="galleryDescription"&gt;
-        &lt;ul class="description_list"&gt;
-            &lt;li&gt;
-                .......your decription.......
-                &lt;a href="#" class="close-info-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;!-- end description --&gt;
-&lt;/div&gt;  
-            </pre>
-
-           </li>
-           <li>You should create &lt;div&gt; element with the <strong>"inner"</strong> CSS class and the images list inside the content:
-            <pre class="prettyprint linenums">
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="images/gallery/category1/full/img-1.jpg" &gt;&lt;img src="images/gallery/category1/img-1.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="images/gallery/category1/full/img-2.jpg" &gt;&lt;img src="images/gallery/category1/img-2.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;
-  ..............
-&lt;/ul&gt;
-            </pre>
-           </li>
-           <li>Write the description for images within <strong>&lt;ul class="description_list"&gt;</strong> list. The fisrt <strong>li</strong> element of this list will correspond the first  <strong>&lt;li&gt; tag</strong> (image) element from the list inside <strong>&lt;div class="inner"&gt;</strong>.</li>
-         </ol>
-         <p class="top-indent">View <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-with-description.html" target="blank_">demo</a></p>
-         You can customize gallery appearance in the <strong>\gallery\less\tmMultimediaGallery.less</strong> (for experts only) or <strong>\gallery\css\tmMultimediaGallery.css</strong> file.
       </div>
     </article>
 

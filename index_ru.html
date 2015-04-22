@@ -135,10 +135,8 @@
                          <dd>
                          	<ul class="list">          
                               <li><a href="#contact-form-manual">Контактная форма</a></li>
-                              <li><a href="#search-engine">Поисковый движок</a></li>
                               <li><a href="#under-construction">Сайт в разработке</a></li>
                               <li><a href="#subscription-form">Форма подписка</a></li>
-                              <li><a href="#multimedia-gallery">Галерея TM </a></li>
                               <li><a href="#video-bg">Вставка фонового видео</a></li>
                               <li><a href="#parallax-bg">Использование параллакс-эффекта</a></li>
                              </ul> 
@@ -291,7 +289,7 @@
             <li>При помощи функции поиска (CTRL+F) найдите переменную <strong>$owner_email</strong>.</li>
           </ol>
             <p>Вы увидите следующую строку:</p>
-            <p> <strong>$owner_email='#';</strong> </p>
+            <p> <strong>$owner_email=['#'];</strong> </p>
             <p>замените символ <strong>#</strong> требуемым email-адресом. Вот и все, теперь контакт-форма должна отправлять сообщения на ваш email.</p>
             <p></p>
             
@@ -303,9 +301,9 @@
     <p>В зависимости от дизайна, шаблон может включать следующие бесплатные дополнения:</p>
         <ol>
             <li><strong>Контактная форма</strong> - с ее помощью посетители сайта могут отправлять сообщения владельцу.</li>
-            <li><strong>Поисковый движок</strong> - выполняет поиск по контенту .html файлов.</li>
             <li><strong>Сайт в разработке</strong> - страница с таймером обратного отсчета.</li>
             <li><strong>Форма подписки</strong> - позволяет добавлять подписку на рассылку писемы.</li>
+            <li><strong>Форма заказа</strong> - с её помощью посетители сайта могут отправлять заказы владельцу.</li>
           </ol>
         <p class="notification-box">Внимание, в зависимости от дизайна, шаблон может включать дополнения Контактная форма, Поисковый движок, Обратный отсчет и Форма подписки, которые уже встроены в шаблон и работают по умолчанию. Воспользуйтесь детальной документацией для каждого приложения для дополнительной настройки или чтобы добавить его на/в другой сайт/проект/шаблон.</p>
         <h4 id="contact-form-manual" class="scrollTo">Руководство по контактной форме</h4>
@@ -488,62 +486,6 @@ $error_text='something goes wrong';</pre>
           </ul>
       </div>
         </article>
-        <!---->
-         <h4 id="search-engine" class="scrollTo">Руководство для поискового движка</h4>
-         <article class="search-engine"><p>Внимание! Функция поиска не работает локально. Она работает только на хостинг-сервере с включенным PHP.</p>
-         <div class="bs-docs-example">
-					
-					<span class="word">Введите слово для поиска:</span>
-					<form id="search" action="search.php" method="GET" accept-charset="utf-8">
-					   <input type="text" name="s" />
-					   <a onclick="document.getElementById('search').submit()">Search</a>
-					</form>	          		
-					<span class="example">Например: lorem, ipsum, dolor</span>
-          </div>
-          <pre class="prettyprint linenums">&lt;form id="search" action="search.php" method="GET" accept-charset="utf-8"&gt;
-   &lt;input type="text" name="s" /&gt;
-   &lt;a onclick="document.getElementById('search').submit()"&gt;Search&lt;/a&gt;
-&lt;/form&gt;</pre>
-					<h4>Описание</h4>
-					<div class="inner">
-						<p><strong>Файлы, необходимые для работы с формой:</strong></p>
-						<div class="inner">
-							<ul class="square-list">
-								<li><strong>jquery.js</strong> &ndash; библиотека jQuery (форма будет работать только с этой версией библиотеки);</li>
-								<li><strong>search.css</strong> &ndash; файл стилей, используемый для оформления страницы результатов поиска;</li>
-								<li><strong>search.php</strong> &ndash; страница, на которой отображаются результаты поиска;</li>
-								<li><strong>search.js</strong> &ndash; скрипт, отвечающий за вывод результатов поиска в iframe страницы <strong>search.php;</strong></li>
-								<li><strong>results.php</strong> &ndash; PHP скрипт, который выполняет поиск.</li>
-							</ul>
-						</div>
-						
-						<p class="pad">Для этой формы нужно задать такие параметры, как: <strong>action="search.php"</strong> и <strong>method="get"</strong>, а также следующий параметр для тега input: <strong>name="s"</strong>. Если требуется изменить название поисковой формы, по умолчанию <strong>id="search"</strong>, это нужно сделать в строке 3 файла <strong>search.js</strong> в папке <strong>search</strong>.</p>
-					</div>
-					<h4>Настройки</h4>
-					<div class="inner">
-						<p class="attention">Внимание, по умолчанию поисковая форма активна, настроена и работает. Данные шаги необходимы, если вы пытаетесь добавить ее в другой проект/шаблон.</p>
-						<p>Чтобы форма правильно работала, выполните следующее:</p>
-						<ul class="square-list">
-							<li>скопируйте папку <strong>search</strong> в корневую директорию с файлами *.html;</li>
-							<li>переместите файл <strong>search.php</strong> из папки <strong>search</strong> в корневую директорию (с файлами *.html);</li>
-							<li>отредактируйте форму, используя вышеуказанное руководство;</li>
-							<li>скопируйте часть  хедера и футера со всеми подключенными скриптами в секцию <strong>&lt;head&gt;&lt;/head&gt;</strong> файла <strong>search.php</strong>, но обязательно добавьте подключение к файлу <strong>search.js</strong>. Например:
-							<pre  class="prettyprint linenums">&lt;link rel="stylesheet" href="css/reset.css" type="text/css" media="all"&gt;
-&lt;link rel="stylesheet" href="css/fonts.css" type="text/css" media="all"&gt;
-&lt;link rel="stylesheet" href="css/style.css" type="text/css" media="all"&gt;
-&lt;script src="js/jquery.js"&gt;&lt;/script&gt;
-&lt;script src="search/search.js"&gt;&lt;/script&gt;</pre></li>
-							<li>Для вывода результатов поиска добавьте следующий блок в контент:
-								<pre class="prettyprint linenums">&lt;h4&gt;Search result:&lt;/h4&gt;
-&lt;div id="search-results"&gt;&lt;/div&gt;</pre>
-							</li>
-							<li>Измените стили результатов поиска, используя <strong>search.css</strong> файл.</li>
-						</ul>
-						<p>Все остальные основные стили шаблона будут автоматически подгружены из файла <strong>style.css</strong> PHP скриптом.</p>
-					</div>
-				</article> 
-         
-         
          <!---->
          <h4 id="under-construction" class="scrollTo">Скрипт обратного отсчета (Страница Сайт в разработке)</h4>
          	<article>	
@@ -754,163 +696,6 @@ $(window).load(function(){
             <li><strong>sitename</strong> &ndash; адрес веб-сайта, на котором размещена форма подписки.</li>
           </ul>
         <p>В случае успешной подписки, владелец сайта и посетитель получат два разных письма, подтверждающих успешную подписку. Электронный адрес владельца сайта подгружается из файла sForm.js, а email посетителя указывается во время подписки.</p>
-      </div>
-    </article>
-    <h4 id="multimedia-gallery" class="scrollTo" style="padding: 50px 0 0px 0;">TM Галерея</h4>
-    <article>  
-
-    <!-- Getting started end -->
-    <h4>Описание</h4>
-    <div class="inner"> 
-     <strong>tmMultimediaGallery</strong> - это адаптивная галерея, в которой используются методы 3D и CSS3 анимации. Эффекты смены картинок меняются с помощью CSS свойств.<br>
-       Нужно отметить, что в браузерах, которые не поддерживают CSS3 анимацию, эффектом смены картинок будет обычный эффект затухания.<br>
-      <p class="top-indent">Реализация галереи может быть в двух вариантах:</p>
-        <div>
-            <ol class="square-list">
-            <li>Автоматическое построение списка картинок с указанием пути к папке с картинками.</li>
-            <li>Ручная вставка списка в HTML код с прописыванием соответствующих путей к картинкам.</li>
-          </ol>
-            
-          </div>
-      </div>
-    <p  class="top-indent">Рассмотрим оба варианта и выясним их отличия.</p>
-    
-    <h4>Вариант 1.</h4>
-    <div class="inner">
-        <p>Подключение и настройка галереи состоит из нескольких шагов:</p>
-        <ol>
-          <li>Создайте копию одной из страниц сайта и переименуйте ее используя любое название.</li>
-          <li>В новой странице оставьте хедер и футер, а все, что находиться внутри контента, удалите.</li>
-          <li>Скопируйте в корень вашего сайта папку <a href="/help/quick-start-guide/website-templates/responsive-website-templates-v1-1/gallery.rar">gallery</a>, которая содержит файлы галереи.</li>
-          <li>Подключите следующие скрипты и стили в секции head:
-              <pre class="prettyprint linenums">
-&lt;!-- start gallery scripts --&gt;
-&lt;link rel="stylesheet" href="gallery/css/tmMultimediaGallery.css"&gt;
-&lt;script src="gallery/js/isotope.pkgd.min.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmFileList.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmPaginationGenerator.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmMultimediaGallery.js"&gt;&lt;/script&gt;
-&lt;script src="gallery/js/tmMultimediaGallery_init.js"&gt;&lt;/script&gt;
-&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;     
-&lt;script src="gallery/js/jquery.touchSwipe.min.js"&gt;&lt;/script&gt;
-&lt;!--&lt;![endif]--&gt;
-
-&lt;!-- end gallery scripts --&gt;         </pre>
-          </li>
-          <li>Перед закрывающим тегом <strong>&lt;/body&gt;</strong> нужно вставить следующий код, и указать верные пути к папкам с картинками. <strong>pathThumb</strong> - путь к миниатюрам, <strong>pathFull</strong> - путь к большим картинкам галереи, которые соответствуют миниатюрам:
-            <pre class="prettyprint linenums">
-&lt;script&gt;
-    $(function(){
-        pathThumb = 'img/gallery/category1/';
-        pathFull = 'img/gallery/category1/full/';
-    })
-&lt;/script&gt;         </pre>
-          </li>
-          <li>Перед контентом вставьте следующий код:
-            <pre class="prettyprint linenums">
-&lt;div class="galleryContainer"&gt;
-    &lt;!-- spinner --&gt;
-    &lt;div class="imgSpinner"&gt;&lt;/div&gt;
-    &lt;!-- close button --&gt;
-    &lt;a href="" class="close-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
-
-    &lt;!-- Navigation --&gt;
-    &lt;div class="gallery_nav"&gt;
-        &lt;!-- previous button --&gt;
-        &lt;a href="#" class="prevButton"&gt;
-            &lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;
-       &lt;/a&gt;
-        &lt;!-- next button --&gt;
-        &lt;a href="#" class="nextButton"&gt;
-            &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-
-    &lt;!-- main gallery and image holder --&gt;
-    &lt;div class="galleryHolder"&gt;
-        &lt;div class="imageHolder"&gt;
-            &lt;img src="images/gallery/category1/full/img-1.jpg" alt=""&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;           </pre>
-
-          </li>
-          <li>Обязательно пропишите правильный путь к любой большой картинке во вставленном коде.</li>
-          <li> Внутри контента HTML страницы нужно создать элемент &lt;div&gt;   с классом CSS <strong>"inner"</strong>:
-  <pre class="prettyprint linenums">
-&lt;div class="inner"&gt;&lt;/div&gt;         </pre>
-          </li>
-          <li>Добавьте ссылку в необходимом месте сайта на созданную новую страницу и проверьте свою галерею в браузере.</li>
-
-        </ol>
-
-        <p class="error-box">Важно! Созданные HTML файлы должны находиться в корневой директории сайта на одном уровне с папкой "gallery". </p>
-
-        <p class="notification-box"> Внимание! Если названия и количество миниатюр не будет совпадать с названиями и количеством больших картинок, галерея будет работать некорректно.</p>
-        
-        
-        <p> Суть данного варианта заключается в том, что не нужно вручную прописывать пути к каждой картинке. Вам стоит лишь указать путь к папкам с миниатюрами и большими картинками. Скрипт сам найдет картинки в указанных папках и сгенерирует список. Поэтому очень важно сохранить соответствие названий и количества картинок в обеих папках. </p>
-
-        <p>Просмотреть  <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-without-description.html" target="blank_">демо</a></p>       
-      </div>
-
-      <h4>Вариант 2.</h4>
-      <div class="inner">
-        <p>Второй вариант отличается от первого возможностью прикрепить к каждой фотографии описание, если оно необходимо. Для этого нужно выполнить с 1 по 5 шаги включительно с первого варианта реализации галереи.</p>
-       Необходимо:
-         <ol class="top-indent">
-           <li>Перед контентом вставьте следующий код:
-            <pre class="prettyprint linenums">
-&lt;div class="galleryContainer"&gt;
-    &lt;!-- spinner --&gt;
-    &lt;div class="imgSpinner"&gt;&lt;/div&gt;
-    &lt;!-- close button --&gt;
-    &lt;a href="" class="close-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;!-- Navigation --&gt;
-    &lt;div class="gallery_nav"&gt;
-        &lt;!-- previous button --&gt;
-        &lt;a href="#" class="prevButton"&gt;
-            &lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;
-       &lt;/a&gt;
-        &lt;!-- next button --&gt;
-        &lt;a href="#" class="nextButton"&gt;
-            &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;!-- main gallery and image holder --&gt;
-    &lt;div class="galleryHolder"&gt;
-        &lt;div class="imageHolder"&gt;
-            &lt;img src="images/gallery/category1/full/img-1.jpg" alt=""&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;!-- description --&gt;
-    &lt;a href="#" class="info-icon"&gt;&lt;i class="fa fa-info"&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;div class="galleryDescription"&gt;
-        &lt;ul class="description_list"&gt;
-            &lt;li&gt;
-                .......your decription.......
-                &lt;a href="#" class="close-info-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;!-- end description --&gt;
-&lt;/div&gt;  
-            </pre>
-
-           </li>
-           <li>Внутри контента  нужно создать елемент &lt;div&gt; с CSS классом <strong>"inner"</strong> и со списком картинок:
-            <pre class="prettyprint linenums">
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="images/gallery/category1/full/img-1.jpg" &gt;&lt;img src="images/gallery/category1/img-1.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="images/gallery/category1/full/img-2.jpg" &gt;&lt;img src="images/gallery/category1/img-2.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;
-  ..............
-&lt;/ul&gt;
-            </pre>
-           </li>
-           <li>Пропишите в списке <strong>&lt;ul class="description_list"&gt;</strong> описание к картинкам. Первый элемент <strong>li</strong> данного списка будет соответствовать первому элементу с тегом <strong>li</strong> (картинке) со списка внутри <strong>&lt;div class="inner"&gt;</strong>.</li>
-         </ol>
-         <p class="top-indent">Просмотреть <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-with-description.html" target="blank_">демо</a></p>
-        Стилизацию внешнего вида галереи можно осуществить, используя файлы <strong>\gallery\less\tmMultimediaGallery.less</strong> (только для экспертов) или <strong>\gallery\css\tmMultimediaGallery.css</strong>.
       </div>
     </article>
 
