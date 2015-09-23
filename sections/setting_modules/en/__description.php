@@ -1,0 +1,1 @@
+<h2 class="item3">Setting modules and extensions included</h2>

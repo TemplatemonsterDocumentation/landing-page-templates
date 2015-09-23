@@ -1,0 +1,38 @@
+{
+	"id":"edit_template",
+	"translations":
+	{
+		"en":"Template content editing",
+		"ru":"Редактирование содержимого шаблона"
+	},
+  "articles": [
+	{
+	  "id": "edit_psd",
+	  "translations": {
+		"en": "PSD files editing",
+		"ru": "Редактирование файлов PSD"
+	  }
+	},
+	{
+	  "id": "edit_html",
+	  "translations": {
+		"en": ".html and .css files editing",
+		"ru": "Редактирование файлов .html и .css"
+	  }
+	},
+	{
+	  "id": "edit_txt",
+	  "translations": {
+		"en": "How to edit text",
+		"ru": "Как редактировать текст"
+	  }
+	},
+	{
+	  "id": "edit_images",
+	  "translations": {
+		"en": "How to edit images",
+		"ru": "Как редактировать изображения"
+	  }
+	}
+  ]
+}

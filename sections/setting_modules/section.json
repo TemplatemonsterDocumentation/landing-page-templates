@@ -1,0 +1,128 @@
+{
+  "id": "setting_modules",
+  "translations": {
+    "en": "Setting modules and extensions included",
+    "ru": "Настройка вложеных модулей и расширений"
+  },
+  "articles": [
+    {
+      "id": "google_webfonts",
+      "translations": {
+        "en": "Google webfonts",
+        "ru": "Google webfonts"
+      }
+    },
+    {
+      "id": "google_map",
+      "translations": {
+        "en": "RD Google Map",
+        "ru": "RD Google Map"
+      }
+    },
+    {
+      "id": "mailform",
+      "translations": {
+        "en": "RD Mailform",
+        "ru": "RD Mailform"
+      }
+    },
+    {
+      "id": "navbar",
+      "translations": {
+        "en": "RD Navbar",
+        "ru": "RD Navbar"
+      }
+    },
+    {
+      "id": "color_schemes",
+      "translations": {
+        "en": "Color Schemes",
+        "ru": "Цветовые схемы"
+      }
+    },
+    {
+      "id": "slider",
+      "translations": {
+        "en": "Slider",
+        "ru": "Слайдер"
+      }
+    },
+    {
+      "id": "gallery",
+      "translations": {
+        "en": "Gallery",
+        "ru": "Gallery"
+      }
+    },
+    {
+      "id": "parallax",
+      "translations": {
+        "en": "RD Parallax",
+        "ru": "RD Parallax"
+      }
+    },
+    {
+      "id": "video_bg",
+      "translations": {
+        "en": "Background video",
+        "ru": "Фоновое видео"
+      }
+    },
+    {
+      "id": "calendar",
+      "translations": {
+        "en": "RD Calendar",
+        "ru": "RD Calendar"
+      }
+    },
+    {
+      "id": "timer",
+      "translations": {
+        "en": "Countdown timer (“under construction” page)",
+        "ru": "Таймер обратного отсчёта (страница “сайт в разработке”)"
+      }
+    },
+    {
+      "id": "progressbar",
+      "translations": {
+        "en": "Digital progressbars",
+        "ru": "Цифровые прогрессбары"
+      }
+    },
+    {
+      "id": "social_icons",
+      "translations": {
+        "en": "Social Icons",
+        "ru": "Социальные иконки"
+      }
+    },
+    {
+      "id": "youtube",
+      "translations": {
+        "en": "Youtube & Vimeo",
+        "ru": "Youtube & Vimeo"
+      }
+    },
+    {
+      "id": "facebook",
+      "translations": {
+        "en": "Facebook Page Plugin",
+        "ru": "Facebook"
+      }
+    },
+    {
+      "id": "flickr",
+      "translations": {
+        "en": "Flickr",
+        "ru": "Flickr"
+      }
+    },
+    {
+      "id": "olark_livechat",
+      "translations": {
+        "en": "Olark Livechat",
+        "ru": "Olark Livechat"
+      }
+    }
+  ]
+}

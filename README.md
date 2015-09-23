@@ -1,4 +1,2 @@
-bootstrap-template-documentation
-================================
-
-Bootstrap template documentation
+# theme-documentation
+New Theme Documentation
