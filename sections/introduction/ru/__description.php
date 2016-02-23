@@ -92,6 +92,15 @@
     <li class="folder">
         <dl class="inline-term">
             <dt>
+                <i class="fa fa-folder"></i>
+                builder
+            </dt>
+            <dd> содержит папки и файлы html5 билдера вместе с приобретенным шаблоном</dd>
+        </dl>
+    </li>
+    <li class="folder">
+        <dl class="inline-term">
+            <dt>
                 <i class="fa fa-file"></i>
                 screenshots
             </dt>

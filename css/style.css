@@ -112,9 +112,10 @@ article article {
 }
 article a {
   color: #203056;
+  text-decoration: underline;
 }
 article a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 @media (max-width: 1599px) {
   article article {

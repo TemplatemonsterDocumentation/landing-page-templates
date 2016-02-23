@@ -86,6 +86,15 @@
     <li class="folder">
         <dl class="inline-term">
             <dt>
+                <i class="fa fa-folder"></i>
+                builder
+            </dt>
+            <dd>includes html5 builder files and folders with the acquired template</dd>
+        </dl>
+    </li>
+    <li class="folder">
+        <dl class="inline-term">
+            <dt>
                 <i class="fa fa-file"></i>
                 screenshots
             </dt>
