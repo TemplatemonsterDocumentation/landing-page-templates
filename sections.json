@@ -1,9 +1,9 @@
 [
-	"introduction",
-	"edit_template",
-	"setting_modules",
-	"builder",
-  	"cookie_policy",
-  	"uploading-template",
-	"conclusion"
+  "introduction",
+  "builder",
+  "edit_template",
+  "uploading-template",
+  "setting_modules",
+  "conclusion",
+  "cookie_policy"
 ]

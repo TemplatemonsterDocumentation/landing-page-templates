@@ -8,6 +8,8 @@
 
 <p><b>Landing Page</b> stands for a high-quality  page, coded manually. Page content consists of HTML code
     and dynamic animation is added by using JavaScript.</p>
+<p>Take the advantages of the HTML 5 Builder tool included with your landing template. Create and customize your layouts and content.</p>
+
 
 <h3>Preparation</h3>
 
