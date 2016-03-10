@@ -4,7 +4,7 @@
     particular visitor and provide them with a better experience. Cookies are a crucial part of many website functions
     which we take for granted.</p>
 
-<p>For instance, it’s usually cookies which allow online shops to remember what items you have in your shopping trolley.
+<p>For instance, it’s usually cookies which allow online shops to remember what items you have in your shopping cart.
     They’re also used to keep you logged in to a website, or to provide valuable usage statistics and information to
     website owners.</p>
 
@@ -17,10 +17,9 @@
 
 <h4>Box info:</h4>
 
-<p>Following the Cookie Law conditions, we suggest you add the plugin <a href="//cookiecuttr.com/">cookiecuttr</a>
+<p>Following the Cookie Law conditions, we suggest that you add the plugin <a href="//cookiecuttr.com/">cookiecuttr</a>
     created by <a href="//twitter.com/cdwharton">Chris Wharton</a> and provided under the GNU General Public
     License.</p>
-
 <h4>This is how it looks like:</h4>
 
 <p>This plugin is used to warn the visitors of your website about cookies usage. The plugin will add the information
@@ -82,7 +81,7 @@
     <li>
         <dl class="inline-term">
             <dt>cookieAcceptButton</dt>
-            <dd>set this to true to hide the accept button, its set to false by default</dd>
+            <dd>set this to true to hide the accept button, it is set to false by default</dd>
         </dl>
     </li>
     <li>
@@ -111,7 +110,7 @@
             <dt>cookieMessage</dt>
             <dd>edit the message you want to appear in the cookie bar, remember to keep the {{cookiePolicyLink}}
                 variable
-                in tact so it inserts your privacy policy link.
+                intact so it inserts your privacy policy link.
             </dd>
         </dl>
     </li>
@@ -146,9 +145,7 @@
     <li>
         <dl class="inline-term">
             <dt>cookieDisable</dt>
-            <dd>list elements comma separated in here that you want to disable, this will only work if cookieCutter is
-                set
-                to true.
+            <dd>list comma separated elements that you want to disable, this will only work if cookieCutter is set to true.
             </dd>
         </dl>
     </li>

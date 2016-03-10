@@ -1,4 +1,4 @@
-<h3>Галерея</h3>
+<h3>Gallery</h3>
 
 <p>Detailed documentation on gallery is available at official website:</p>
 

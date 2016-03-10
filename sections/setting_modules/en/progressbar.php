@@ -1,7 +1,6 @@
 <h3>Digital progressbars</h3>
 
-<p class="alert alert-info">The following script is an optional element, so it is included to template package only in
-    case it was pre-designed within .PSD layout.</p>
+<p class="alert alert-info">The following script is an optional element, so it is included in the template package only in case it was pre-designed within .PSD layout.</p>
 
 <figure class="img-polaroid">
     <img src="img/rprogressbar.jpg" alt="">

@@ -1,6 +1,6 @@
 <h3>Countdown timer (“under construction” page)</h3>
 
-<p class="alert alert-info">Countdown timer is an optional element, so it is included to template package only in case it was pre-designed within .PSD layout.</p>
+<p class="alert alert-info">Countdown timer is an optional element, so it is included in the template package only in case it was pre-designed within .PSD layout.</p>
 
 <figure class="img-polaroid">
     <img src="img/countdown.gif" alt="">
@@ -31,7 +31,7 @@
 
 <code>countTo = new Date(year, month + 1, day);</code>
 
-<p>Like, project starts on 12 May 2020. In this case proper code line will look as follows:</p>
+<p>For example, project starts on 12 May 2020. In this case proper code line will look as follows:</p>
 
 <code>countTo = new Date(2020, 6, 12);</code>
 

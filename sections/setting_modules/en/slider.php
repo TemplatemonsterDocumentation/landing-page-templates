@@ -1,4 +1,4 @@
-<h3>Слайдер</h3>
+<h3>Slider</h3>
 
 <p>Our templates use Camera Slider jQuery-plugin. You might need to change slider images and description.</p>
 
@@ -6,8 +6,7 @@
     <img src="img/slider.jpg" alt="">
 </figure>
 
-<p>To create new slide in slider you should insert the following code HTML in slider markup at the appropriate .html
-    file:</p>
+<p>To create new slide in slider, you should insert the following HTML code in slider markup in the appropriate .html file:</p>
 
 <pre><code>
 &lt;div data-src="images/page-1_slide02.jpg"&gt;

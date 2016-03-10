@@ -27,8 +27,7 @@
     </li>
 </ul>
 
-<p class="alert alert-info">In order to observe parallax-effect, image has to be higher than a section, you're applying
-    effect to..</p>
+<p class="alert alert-info">In order to observe parallax-effect, image has to be higher than a section you're applying effect to.</p>
 
 
 

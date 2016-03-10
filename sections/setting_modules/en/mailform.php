@@ -10,7 +10,7 @@
 <p>Template forms are already set to correct mode. You just need to specify site owner e-mail address, that will receive
     the results of site visitors form filling.</p>
 
-<p>При необходимости можно указать несколько адресов. Для этого вам If necessary, you can specify several addresses. In
+<p>If necessary, you can specify several addresses. In
     order to do this, please perform the following:</p>
 
 
@@ -28,14 +28,14 @@
     </li>
 </ol>
 
-<h4>Form operating mode change:</h4>
+<h4>Changing form operating mode:</h4>
 
 <p>If you need to change form operating mode, open *.html page, and edit form code by adding field right after opening &lt;form&gt;, tag</p>
 
 <code>&lt;input type=”hidden” name=”form-type” value=”YOUR_FORM”&gt;</code>
 
 
-<p>Use respectable form operating mode here instead of YOUR_FORM:</p>
+<p>Use the corresponding form operating mode instead of YOUR_FORM:</p>
 
 <ul class="marked-list">
     <li>
@@ -62,7 +62,7 @@
 
 <code>&lt;input type=”hidden” name=”form-type” value=”contact”/&gt;</code>
 
-<h4>Setting e-mails sending via SMTP-server:</h4>
+<h4>Sending e-mails via SMTP-server:</h4>
 
 <p>SMTP server setting does not relate to form setting at all.</p>
 

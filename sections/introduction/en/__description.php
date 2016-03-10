@@ -13,13 +13,11 @@
 
 <h3>Preparation</h3>
 
-<p>Before proceeding with Landing Page installation, you need to prepare. It is recommended to follow steps, listed
-    below:</p>
+<p>Before proceeding with Landing Page installation, you need to prepare. It is recommended that you follow the steps listed below:</p>
 
 <h4>Software</h4>
 
-<p>We recommend that you download all the required software to edit Landing Page. Software Required is listed at
-    template preview page.</p>
+<p>We recommend that you download all the required software to edit Landing Page. Software Required is listed on the template preview page.</p>
 
 <p>Technical requirements might differ depending on specific template, therefore we will list the most basic ones:</p>
 
@@ -27,11 +25,11 @@
     <li>First, you'll need proper unzipping software for password-protected sources_#########.zip package extracting.
         You may use WinZip 9+ (Windows) and Stuffit Expander 10+ (Mac). This is a mandatory software.
     </li>
-    <li>You might also require Adobe Photoshop (v. CS3 or higher). It is used for source .PSD file editing and is
-        needful in case of graphic design changes performing or template images editing.
+    <li>You might also require Adobe Photoshop (v. CS3 or higher).  It is used for editing source .PSD file and is required for
+        performing graphic design changes or editing template images.
     </li>
-    <li>You should also use code editor, i. e. Sublime Text, Notepad++, Atom, etc. for template file source code
-        editing.
+    <li>You should also use code editor, i. e. Sublime Text,
+        Notepad++, Atom, etc. to edit the source code of template files.
     </li>
     <li>For files uploading to server FTP manager will be also needed, like FileManager at your hosting control panel or
         desktop applications, such as Total Commander, FileZilla, CuteFTP, etc.
@@ -43,11 +41,11 @@
 <p>You can run index.html file directly from your site folder, but it won't let you explore all template functionality.
     You should upload template to hosting server in order to display a fully working website correctly.</p>
 
-<p>In case you have existing server already, please check if it meets Landing Page requirements, listed at template
+<p>In case you have existing server already, please check if it meets Landing Page requirements, listed on template
     preview page. For most templates PHP 5.4+ version is the only one required.</p>
 
 <p>You may also install Landing Page to your computer locally by using localhost. In order to set up local server
-    you may use WAMP, AppServ, MAMP or any similar software. All of them are installed same as regular application.</p>
+    you may use WAMP, AppServ, MAMP or any similar software. All of them are installed in the same way as regular application.</p>
 
 <h6>Feel free to check the following tutorials on how to set up local server:</h6>
 
@@ -91,7 +89,7 @@
                 <i class="fa fa-folder"></i>
                 builder
             </dt>
-            <dd>includes html5 builder files and folders with the acquired template</dd>
+            <dd>includes html5 builder files and folders with the acquired template.</dd>
         </dl>
     </li>
     <li class="folder">
