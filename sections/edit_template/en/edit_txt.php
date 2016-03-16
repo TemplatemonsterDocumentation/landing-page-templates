@@ -3,7 +3,7 @@
 <p>As previously stated, all site content is inserted to .html file. You'll need minimal skills on orienting within
     code.</p>
 
-<p> In order to replace “lipsum” (filling text) with your own one please, do the following:</p>
+<p> In order to replace “lipsum” (filling text) with your own one, please do the following:</p>
 
 <ol class="index-list">
     <li>Navigate to ‘site’ folder within template package.</li>

@@ -82,7 +82,7 @@
 
 <p>represents new map marker.</p>
 
-<h4>Pop-up windows to markers adding</h4>
+<h4>Adding pop-up windows to markers</h4>
 
 <p>In order to add pop-up window to custom map marker just insert window content to the respectable map markers list element </p>
 

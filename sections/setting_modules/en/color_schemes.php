@@ -1,7 +1,7 @@
 <h3>Color schemes</h3>
 
-<p>If template pre-designes several color schemes, it includes respectable files colorScheme-1.css, colorScheme-2.css,
-    colorScheme-#.css delivered to template owner within theme package.</p>
+<p>If template has several color schemes, it includes corresponding files colorScheme-1.css, colorScheme-2.css,
+    colorScheme-#.css delivered to template owner within the theme package.</p>
 
 <p>To activate desired color scheme initialize appropriate color schemes in &lt;head&gt; section of your html files,
     before the closing &lt;/head&gt; tag.</p>

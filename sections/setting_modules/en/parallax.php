@@ -4,7 +4,7 @@
     <img src="img/parallax.gif" alt="">
 </figure>
 
-<p>In order to implement parallax section to your .html page you should define the following TTML markup at a target
+<p>In order to implement parallax section to your .html page you should define the following HTML markup at a target
     place of page:</p>
 
 <code>&lt;section class="parallax" data-url="images/parallax1.jpg" data-mobile="true"&gt; &lt;/section&gt;</code>
@@ -27,8 +27,9 @@
     </li>
 </ul>
 
-<p class="alert alert-info">In order to observe parallax-effect, image has to be higher than a section, you're applying
-    effect to..</p>
+<p class="alert alert-info">In order to observe parallax-effect, image has to be higher than a section you're applying
+    effect to.
+</p>
 
 
 
