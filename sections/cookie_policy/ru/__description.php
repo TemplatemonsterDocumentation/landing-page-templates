@@ -218,4 +218,4 @@
 
 <p class="alert alert-info">Более детальную информацию и инструкции по кастомизации и использованию плагина можно найти
     на официальном сайте
-    <a href="//cookiecuttr.com/">cookiecuttr</a>.</p>
+    <a href="http://cookiecuttr.com/">cookiecuttr</a>.</p>

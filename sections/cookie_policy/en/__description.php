@@ -215,4 +215,4 @@
 
 <p class="alert alert-info">You can find more detailed information and instructions on plugin customization and usage at
     the official
-    <a href="s//cookiecuttr.com/">cookiecuttr</a> website.</p>
+    <a href="http://cookiecuttr.com/">cookiecuttr</a> website.</p>
