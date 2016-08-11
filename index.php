@@ -40,7 +40,10 @@ if (!isset($sections)) {
 </head>
 <body data-section="<?php echo $section_param; ?>" onload="prettyPrint()">
 
-<?php if(strpos($domain, 'templatemonster.com') !== false): ?>
+<?php 
+    $domain = $_SERVER['HTTP_HOST'];
+    if(strpos($domain, 'templatemonster.com') !== false): 
+?>
     <!--Templatemonster GTM -->
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MS2BNB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
