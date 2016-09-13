@@ -10,7 +10,7 @@
 <p>Template forms are already set to correct mode. You just need to specify site owner e-mail address, that will receive
     the results of site visitors form filling.</p>
 
-<p>При необходимости можно указать несколько адресов. Для этого вам If necessary, you can specify several addresses. In
+<p>If necessary, you can specify several addresses. In
     order to do this, please perform the following:</p>
 
 
