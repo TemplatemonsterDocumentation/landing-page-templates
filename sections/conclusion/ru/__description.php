@@ -13,13 +13,13 @@
 <h4>Инструкции</h4>
 
 <ul class="marked-list">
-    <li><a target="_blank" href="/help/developer-tools.html">Инструменты разработчика</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/hosting-faq/">FAQ по хостингу</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-css/">Работа с CSS</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-photoshop/">Работа с Photoshop</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-html/">Работа с HTML</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-files/">Работа с файлами</a></li>
-    <li><a target="_blank" href="/help/website-templates/js-animated/js-animated-tutorials/">Туториалы для
+    <li><a target="_blank" href="https://www.templatemonster.com/help/developer-tools.html">Инструменты разработчика</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/hosting-faq">FAQ по хостингу</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-css">Работа с CSS</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-photoshop">Работа с Photoshop</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-html">Работа с HTML</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-files">Работа с файлами</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/website-templates/js-animated/">Туториалы для
             JS-анимированных шаблонов</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-fonts/">Работа со шрифтами</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-fonts">Работа со шрифтами</a></li>
 </ul>
