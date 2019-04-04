@@ -12,13 +12,13 @@
 <h4>Instructions</h4>
 
 <ul class="marked-list">
-    <li><a target="_blank" href="/help/developer-tools.html">Developer Tools</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/hosting-faq/">Hosting FAQ</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-css/">Working with CSS</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-photoshop/">Working with Photoshop</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-html/">Working with HTML</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-files/">Working with Files</a></li>
-    <li><a target="_blank" href="/help/website-templates/js-animated/js-animated-tutorials/">JS animated templates
+    <li><a target="_blank" href="https://www.templatemonster.com/help/developer-tools.html">Developer Tools</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/hosting-faq">Hosting FAQ</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-css">Working with CSS</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-photoshop">Working with Photoshop</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-html">Working with HTML</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-files">Working with Files</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/website-templates/js-animated/">JS animated templates
             tutorials</a></li>
-    <li><a target="_blank" href="/help/general-tutorials/work-with-fonts/">Working with fonts</a></li>
+    <li><a target="_blank" href="https://www.templatemonster.com/help/general-tutorials/work-with-fonts">Working with fonts</a></li> 
 </ul>
